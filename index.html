@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athar Coffee Roster</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+    
+        nav {
+            background: #3e2723;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+       
+        .hero {
+            background: #eee;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 5px solid #3e2723;
+        }
+
+        .hero h1 {
+            font-family: "Courier New", Courier, monospace;
+            font-weight: bold;
+            font-size: 36px;
+            color: #3e2723;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+       
+        .btn {
+            background: #3e2723;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #5d4037;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+      
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #eee;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <strong>Athar Coffee</strong>
+        </div>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+ 
+    
+    <div class="hero">
+        <h1>ATHAR COFFEE ROSTER</h1>
+        <h2>Minum Kopi, Nongkrong Bareng Temen</h2>
+        <p>Biji Kopi Lokal Pilihan</p>
+        <a href="menu.html" class="btn">Lihat Menu</a>
+    </div>
+<!-- Tambahkan di bawah Hero Section -->
+<section class="about">
+    <h2>Tentang Athar Coffee</h2>
+    <p>Kami menyajikan kopi lokal terbaik dengan biji pilihan dari petani lokal Indonesia.</p>
+</section>
+
+<!-- Tambahkan sebelum Footer -->
+<section class="info">
+    <div class="hours">
+        <h3>Jam Buka</h3>
+        <p>Senin - Jumat: 10.00 - 22.00</p>
+        <p>Sabtu - Minggu: 11.00 - 00.00</p>
+    </div>
+    <div class="contact">
+        <h3>Hubungi Kami</h3>
+        <p>📞 0811-235-060</p>
+        <p>📧 atharcoffeeroster@gmail.com </p>
+    </div>
+</section>
+
+<!-- Tambahkan di Footer -->
+<div class="Social Media">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">TikTok</a>
+    
+    <footer>
+        &copy; 2024 Kopi Athar. All Rights Reserved.
+    </footer>
+</div>
+</body>
+</html>
+<script>
+    window.addEventListener('scroll', function() {
+        document.querySelectorAll('.fade-in').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    });
+</script>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athar Coffee Roster Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="title">Athar Coffee Roster</h1>
+
+    <div class="container">
+        
+        <!-- Bagian Coffee Series -->
+        <h2 class="judul-menu">Coffee Series</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="americano.jpg" alt="americano">
+                <h3>Americano</h3>
+                <p>Rp 25.000</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="latte.jpg" alt="latte">
+                <h3>Latte</h3>
+                <p>Rp 28.000</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="kopsu.jpg" alt="kopsu">
+                <h3>Kopi Susu</h3>
+                <p>Rp 30.000</p>
+            </div>
+        </div>
+
+        <!-- Bagian Non Coffee Series -->
+        <h2 class="judul-menu">Non Coffee Series</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="mojito.jpg" alt="mojito">
+                <h3>Mojito</h3>
+                <p>Rp 35.000</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="matcha.jpg"alt="matcha">
+                <h3>Matcha Latte</h3>
+                <p>Rp 40.000</p>
+            </div>
+        
+            <div class="menu-item">
+                <img src="vanillalatte.jpg" alt="vanillalatte">
+                <h3>Vanilla Latte</h3>
+                <p>Rp 30.000</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="hero">
+        <a href="index.html" class="btn">Back</a>
+    </div>
+
+</body>
+</html>
+<script>
+    window.addEventListener('scroll', function() {
+        document.querySelectorAll('.fade-in').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    });
+</script>
